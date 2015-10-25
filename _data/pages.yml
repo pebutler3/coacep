@@ -1,0 +1,12 @@
+- url: /
+  title: Home
+  group: Nav
+- url: /about/
+  title: About
+  group: Nav
+- url: /recipes/
+  title: Recipes
+  group: Nav
+- url: /tips/
+  title: Tips
+  group: Nav
