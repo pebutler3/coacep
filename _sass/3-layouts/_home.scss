@@ -1,7 +1,7 @@
 article.home-panel {
   @include grid-row;
   section.about {
-    @include panel($bg: #333, $border: false);
+    @include panel($bg: $black, $border: false);
     @include grid-column(8);
   }
   section.dates {

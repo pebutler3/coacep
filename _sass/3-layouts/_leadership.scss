@@ -1,0 +1,11 @@
+section.leadership {
+  @include panel($border: false);
+  @include grid-row;
+  text-align: center;
+  div {
+    @include grid-column(3);
+    img {
+      border-radius: 100%;
+    }
+  }
+}
