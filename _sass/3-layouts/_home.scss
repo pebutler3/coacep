@@ -3,6 +3,7 @@ article.home-panel {
   section.about {
     @include panel($bg: $black, $border: false);
     @include grid-column(8);
+    margin-bottom: 0;
   }
   section.dates {
     @include grid-column(4);
