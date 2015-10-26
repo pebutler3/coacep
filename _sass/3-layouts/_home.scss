@@ -4,8 +4,10 @@ article.home-panel {
     @include panel($bg: $black, $border: false);
     @include grid-column(8);
     margin-bottom: 0;
+    padding: $section-padding;
   }
   section.dates {
     @include grid-column(4);
+    padding: $section-padding;
   }
 }
