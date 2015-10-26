@@ -1,0 +1,23 @@
+section.sub-leadership {
+	@include panel($bg: $black, $border: false);
+	@include grid-row;
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+	.board-of-directors {
+		@include grid-column(6);
+		div {
+			@include grid-row;
+			ul {
+				@include grid-column(6, $collapse: true);
+			}
+		}
+	}
+	.resident-rep {
+		@include grid-column(3, $collapse: true);
+	}
+	.leadership-fellow {
+		@include grid-column(3, $collapse: true);
+	}
+}
