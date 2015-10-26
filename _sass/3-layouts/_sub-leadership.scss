@@ -1,6 +1,7 @@
 section.sub-leadership {
 	@include panel($bg: $black, $border: false);
 	@include grid-row;
+	padding: $section-padding;
 	ul {
 		padding: 0;
 		list-style: none;
