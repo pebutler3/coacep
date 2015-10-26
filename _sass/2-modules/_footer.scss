@@ -1,0 +1,4 @@
+footer {
+	@include panel($bg: $black, $border: false);
+	@include grid-row;
+}
