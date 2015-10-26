@@ -1,5 +1,7 @@
 <header>
 
+<div class="fixed">
+  
   <nav class="top-bar" data-topbar role="navigation">
 
     <ul class="title-area">
@@ -10,7 +12,7 @@
     </ul>
 
     <section class="top-bar-section">
-      <ul class="right">
+      <ul class="left">
           {% for page in site.data.pages %}
             {% if page.title %}
             <li><a  href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -20,4 +22,7 @@
     </section>
 
   </nav>
+</div>
+
 </header>
+
