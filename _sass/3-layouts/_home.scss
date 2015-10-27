@@ -1,16 +1,15 @@
 article.home-panel {
   @include grid-row;
-  background: lighten($gray, 2%);
+  background: $gray;
   color: $white;
   border-top: 2px solid $lt-green;
   section.about {
-    @include panel($bg: $gray, $border: false);
     @include grid-column(8);
     padding: $section-padding;
     margin-bottom: 0;
   }
   section.dates {
     @include grid-column(4);
-    padding: 1em 4em;
+    padding: 4em 4em;
   }
 }
