@@ -1,5 +1,5 @@
 section.sub-leadership {
-	@include panel($bg: $black, $border: false);
+	@include panel($bg: darken($blue, 5%), $border: false);
 	@include grid-row;
 	padding: $section-padding;
 	ul {
