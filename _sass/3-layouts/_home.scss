@@ -1,10 +1,10 @@
 article.home-panel {
   @include grid-row;
-  background: $black;
+  background: lighten($gray, 2%);
   color: $white;
   border-top: 2px solid $lt-green;
   section.about {
-    @include panel($bg: darken($black, 2%), $border: false);
+    @include panel($bg: $gray, $border: false);
     @include grid-column(8);
     padding: $section-padding;
     margin-bottom: 0;
