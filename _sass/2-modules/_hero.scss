@@ -7,10 +7,14 @@ section.hero {
   h2 {
     display: table-cell;
     position: relative;
+    color: $white;
     width: 400px;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     vertical-align: middle;
+    span {
+      color: $green;
+    }
   }
 }
