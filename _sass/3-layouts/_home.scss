@@ -11,6 +11,6 @@ article.home-panel {
   }
   section.dates {
     @include grid-column(4);
-    padding: 3em 4em;
+    padding: 1em 4em;
   }
 }
