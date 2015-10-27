@@ -1,5 +1,5 @@
 section.leadership {
-  @include panel($border: false);
+  @include panel($bg: $blue, $border: false);
   @include grid-row;
   text-align: center;
   padding: $section-padding;
