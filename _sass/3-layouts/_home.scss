@@ -3,7 +3,7 @@ article.home-panel {
   background: $gray;
   color: $white;
   border-top: 2px solid $lt-green;
-  section.about {
+  section.welcome {
     @include grid-column(8);
     padding: $section-padding;
     margin-bottom: 0;
