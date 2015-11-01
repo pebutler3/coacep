@@ -1,5 +1,5 @@
 # Site settings
-exclude: [node_modules]
+exclude: [node_modules, gulpfile.js, package.json]
 title: Colorado ACEP
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
