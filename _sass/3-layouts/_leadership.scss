@@ -2,17 +2,50 @@ section.leadership {
   @include panel($bg: $blue, $border: false);
   @include grid-row;
   text-align: center;
-  padding: $section-padding;
   h2 {
-   font-size: 42px;
-   padding-bottom: 1em;
    text-transform: uppercase;
    letter-spacing: 5px;
   }
   div {
-    @include grid-column(3);
     img {
       border-radius: 100%;
     }
   }
+}
+
+// Media Queries
+
+@media #{$small-only} {
+
+  section.leadership {
+
+    h2 {
+      font-size: 32px;
+      padding: .5em 0;
+    }
+
+    div {
+      @include grid-column(6);
+    }
+
+  }
+
+}
+
+@media #{$medium-up} {
+
+  section.leadership {
+    padding: $section-padding;
+
+    h2 {
+      font-size: 42px;
+      padding-bottom: 1em;
+    }
+
+    div {
+      @include grid-column(3);
+    }
+
+  }
+
 }
