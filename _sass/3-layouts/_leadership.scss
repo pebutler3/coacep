@@ -3,6 +3,12 @@ section.leadership {
   @include grid-row;
   text-align: center;
   padding: $section-padding;
+  h2 {
+   font-size: 42px;
+   padding-bottom: 1em;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+  }
   div {
     @include grid-column(3);
     img {
