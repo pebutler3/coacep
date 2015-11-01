@@ -1,12 +1,9 @@
 - url: /
   title: Home
   group: Nav
-- url: /about/
-  title: About
+- url: /legislative/
+  title: Legislative
   group: Nav
-- url: /recipes/
-  title: Recipes
-  group: Nav
-- url: /tips/
-  title: Tips
+- url: /contact/
+  title: Contact
   group: Nav
