@@ -1,5 +1,5 @@
 section.leadership {
-  @include panel($bg: $blue, $border: false);
+  @include panel($bg: $gray, $border: false);
   @include grid-row;
   text-align: center;
   h2 {
@@ -8,7 +8,7 @@ section.leadership {
   }
   div {
     img {
-      border-radius: 100%;
+      border-radius: 2%;
     }
   }
 }
