@@ -1,10 +1,11 @@
 section.leadership {
-  @include panel($bg: $gray, $border: false);
   @include grid-row;
   text-align: center;
+  color: darken($blue, 5%);
   h2 {
    text-transform: uppercase;
    letter-spacing: 5px;
+   line-height: 1px;
   }
   div {
     img {
