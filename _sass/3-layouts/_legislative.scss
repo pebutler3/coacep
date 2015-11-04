@@ -1,0 +1,9 @@
+section.legislative {
+  @include grid-row;
+  background-position: cover;
+  min-height: 300px;
+  padding: $section-padding;
+  div {
+    @include grid-column(8);
+  }
+}
