@@ -2,16 +2,21 @@ section.leadership {
   @include grid-row;
   text-align: center;
   color: darken($blue, 5%);
+
   h2 {
    text-transform: uppercase;
    letter-spacing: 5px;
    line-height: 1px;
   }
+
   div {
+
     img {
       border-radius: 2%;
     }
+
   }
+
 }
 
 // Media Queries
