@@ -1,24 +1,33 @@
 section.sub-leadership {
-	@include panel($bg: darken($blue, 5%), $border: false);
-	@include grid-row;
-	padding: $section-padding;
-	ul {
-		padding: 0;
-		list-style: none;
-	}
-	.board-of-directors {
-		@include grid-column(6);
-		div {
-			@include grid-row;
-			ul {
-				@include grid-column(6, $collapse: true);
-			}
-		}
-	}
-	.resident-rep {
-		@include grid-column(3, $collapse: true);
-	}
-	.leadership-fellow {
-		@include grid-column(3, $collapse: true);
-	}
+  @include grid-row;
+  background: $blue;
+  padding: $section-padding;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .board-of-directors {
+    @include grid-column(6);
+
+    div {
+      @include grid-row;
+
+      ul {
+        @include grid-column(6, $collapse: true);
+      }
+
+    }
+
+  }
+
+  .resident-rep {
+    @include grid-column(3, $collapse: true);
+  }
+
+  .leadership-fellow {
+    @include grid-column(3, $collapse: true);
+  }
+
 }
