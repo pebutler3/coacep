@@ -1,7 +1,8 @@
 section.sub-leadership {
   @include grid-row;
   background: $blue;
-  padding: $section-padding;
+
+  &:before { @include top-angle($white) }
 
   ul {
     padding: 0;
