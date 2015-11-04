@@ -6,7 +6,7 @@
 // Top Bar Variables
 
 // Background color for the top bar
-$topbar-bg-color: $black-90;
+$topbar-bg-color: $black-87;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -25,9 +25,9 @@ $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -10% ; // Darken by 10%
 $topbar-link-bg: transparent;
-$topbar-link-bg-hover: $green;
+$topbar-link-bg-hover: $blue;
 $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-active: $green;
+$topbar-link-bg-active: $blue;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%) ;
 $topbar-link-font-family: $body-font-family ;
 $topbar-link-text-transform: none ;
