@@ -1,0 +1,15 @@
+@mixin top-angle($border-color) {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 100px solid $border-color;
+    border-right: 2000px solid transparent;
+}
+
+@mixin bottom-angle($border-color) {
+    display: block;
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid $border-color;
+    border-left: 2000px solid transparent;
+}
