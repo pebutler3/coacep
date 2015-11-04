@@ -12,3 +12,8 @@ $blue         : #00bcd4;
 
 // Layout
 $section-padding: 5em 4em;
+
+// hack for bottom-angle mixin
+body {
+  overflow-X: hidden;
+}
