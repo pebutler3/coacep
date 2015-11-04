@@ -1,8 +1,7 @@
 article.home-panel {
   @include grid-row;
-  background: $gray;
+  background: $blue;
   color: $white;
-  border-top: 2px solid $lt-green;
 
   section.welcome {
     margin-bottom: 0;
