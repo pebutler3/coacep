@@ -1,7 +1,12 @@
 article.leadership {
   @include grid-row;
+  background: $offWhite;
   text-align: center;
   color: $dk-blue;
+
+  section.main-leadership {
+    padding: 2em 0;
+  }
 
   h2 {
    text-transform: uppercase;
@@ -40,6 +45,8 @@ article.leadership {
 @media #{$medium-up} {
 
   article.leadership {
+    padding: 1em 0;
+
 
     h2 {
       font-size: 42px;
