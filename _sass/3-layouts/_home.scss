@@ -6,7 +6,7 @@ article.home {
     margin-bottom: 0;
   }
 
-  &:after { @include bottom-angle($border-color: $white); }
+  &:after { @include bottom-angle($border-color: $offWhite); }
 
 }
 
