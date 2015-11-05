@@ -5,6 +5,5 @@
         "contact";
 hr {
   @include grid-column(4, $center: true);
-  border-color: $blue;
-  border-top: 0;
+  @include hr(2em, 2em);
 }
