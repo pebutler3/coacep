@@ -3,7 +3,9 @@ $row-width       : 100%;
 // Generic Colors
 $black           : #333333;
 $black-87        : rgba(26, 26, 26, 0.87);
+
 $white           : #ffffff;
+$offWhite        : darken($white, 3%);
 
 // Brand Colors
 $gray            : rgba(158, 158, 158, 0.43);
@@ -18,6 +20,7 @@ $dk-blue      : darken($blue, 5%);
 body {
   overflow-X: hidden;
 }
+
 h2 {
   font-size: 42px;
 }
