@@ -16,12 +16,10 @@ article.home-panel {
 
   section.welcome {
     @include grid-column(12);
-    padding-top: 1em;
   }
 
   section.dates {
     @include grid-column(12);
-    padding: 2em 0 4em 1em;
   }
 
 }
@@ -30,12 +28,10 @@ article.home-panel {
 
   section.welcome {
     @include grid-column(8);
-    padding: $section-padding;
   }
 
   section.dates {
     @include grid-column(4);
-    padding: 4em 4em;
   }
 
 }

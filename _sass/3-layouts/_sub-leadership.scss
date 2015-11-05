@@ -1,9 +1,5 @@
 section.sub-leadership {
   @include grid-row;
-  background: $blue;
-  padding-top: 3em;
-
-  &:after { @include bottom-angle($white); }
 
   ul {
     padding: 0;
@@ -49,7 +45,7 @@ section.sub-leadership {
     div {
 
       ul {
-        @include grid-column(6, $collapse: true);
+        @include grid-column(6);
       }
 
     }
@@ -57,11 +53,11 @@ section.sub-leadership {
   }
 
   .resident-rep {
-    @include grid-column(3, $collapse: true);
+    @include grid-column(3);
   }
 
   .leadership-fellow {
-    @include grid-column(3, $collapse: true);
+    @include grid-column(3);
   }
 
 }

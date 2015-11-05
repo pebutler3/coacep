@@ -1,7 +1,7 @@
-section.leadership {
+article.leadership {
   @include grid-row;
   text-align: center;
-  color: darken($blue, 5%);
+  color: $dk-blue;
 
   h2 {
    text-transform: uppercase;
@@ -23,11 +23,10 @@ section.leadership {
 
 @media #{$small-only} {
 
-  section.leadership {
+  article.leadership {
 
     h2 {
       font-size: 32px;
-      padding: .5em 0;
     }
 
     div {
@@ -40,12 +39,10 @@ section.leadership {
 
 @media #{$medium-up} {
 
-  section.leadership {
-    padding: $section-padding;
+  article.leadership {
 
     h2 {
       font-size: 42px;
-      padding-bottom: 1em;
     }
 
     div {

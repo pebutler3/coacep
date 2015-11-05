@@ -1,9 +1,29 @@
 section.legislative {
   @include grid-row;
-  background-position: cover;
-  min-height: 300px;
-  padding: $section-padding;
-  div {
-    @include grid-column(8);
+  color: $dk-blue;
+
+  h2 {
+    text-align: center;
   }
+
+}
+
+@media #{$small-only} {
+
+  section.legislative {
+
+    div { @include grid-column(12); }
+
+  }
+
+}
+
+@media #{$medium-up} {
+
+  section.legislative {
+
+    div { @include grid-column(12); }
+
+  }
+
 }

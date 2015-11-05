@@ -3,3 +3,8 @@
         "sub-leadership",
         "legislative",
         "contact";
+hr {
+  @include grid-column(4, $center: true);
+  border-color: $blue;
+  border-top: 0;
+}
