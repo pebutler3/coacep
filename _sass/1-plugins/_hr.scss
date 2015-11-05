@@ -1,0 +1,8 @@
+@mixin hr($padding, $margin) {
+  border-color: $blue;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: $padding;
+  margin-bottom: $margin;
+}
