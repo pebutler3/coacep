@@ -1,8 +1,9 @@
 section.sub-leadership {
   @include grid-row;
   background: $blue;
+  padding-top: 3em;
 
-  &:before { @include top-angle($white) }
+  &:after { @include bottom-angle($white); }
 
   ul {
     padding: 0;
@@ -10,10 +11,42 @@ section.sub-leadership {
   }
 
   .board-of-directors {
-    @include grid-column(6);
 
     div {
       @include grid-row;
+    }
+
+  }
+
+}
+
+@media #{$small-only} {
+
+  .board-of-directors {
+    @include grid-column(12);
+
+    ul {
+      @include grid-column(12, $collapse: true);
+    }
+
+  }
+
+  .resident-rep {
+    @include grid-column(12);
+  }
+
+  .leadership-fellow {
+    @include grid-column(12);
+  }
+
+}
+
+@media #{$medium-up} {
+
+  .board-of-directors {
+    @include grid-column(6);
+
+    div {
 
       ul {
         @include grid-column(6, $collapse: true);
