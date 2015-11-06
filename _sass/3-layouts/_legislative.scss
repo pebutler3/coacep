@@ -1,11 +1,11 @@
 section.legislative {
   @include grid-row;
-  color: $dk-blue;
+  background: $gray-90;
+  color: $white;
 
-  h2 {
-    text-align: center;
-  }
+  &:before { @include top-angle($offWhite); }
 
+  a { color: $blue; text-decoration: none }
 }
 
 @media #{$small-only} {
@@ -22,8 +22,9 @@ section.legislative {
 
   section.legislative {
 
-    div { @include grid-column(12); }
+    div { @include grid-column(8); }
 
+    ul.updates { @include grid-column(4); }
   }
 
 }
