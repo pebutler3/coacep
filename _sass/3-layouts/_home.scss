@@ -6,8 +6,6 @@ article.home {
     margin-bottom: 0;
   }
 
-  &:after { @include bottom-angle($border-color: $offWhite); }
-
 }
 
 // Media Queries
