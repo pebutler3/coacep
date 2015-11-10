@@ -1,7 +1,7 @@
 <header>
 
 <div class="fixed">
-  
+
   <nav class="top-bar" data-topbar role="navigation">
 
     <ul class="title-area">
@@ -13,11 +13,11 @@
 
     <section class="top-bar-section">
       <ul class="left">
-          {% for page in site.data.pages %}
-            {% if page.title %}
             <li><a  href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
+            <li><a href="#home">Home</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#legislative">Legislative</a></li>
+            <li><a href="#contact">Contact</a></li>
       </ul>
     </section>
 
