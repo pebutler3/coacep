@@ -4,8 +4,6 @@ article.legislative {
     padding-bottom: 1em;
 
     h2 { @include grid-column(12); }
-  
-    &:before { @include top-angle($white); }
 
     section.updates {
         @include grid-row;
