@@ -8,12 +8,6 @@ article.leadership {
     padding: 2em 0;
   }
 
-  h2 {
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   line-height: 1px;
-  }
-
   div {
 
     img {
@@ -36,6 +30,7 @@ article.leadership {
 
     div {
       @include grid-column(6);
+      line-height: 20px;
     }
 
   }
@@ -45,7 +40,7 @@ article.leadership {
 @media #{$medium-up} {
 
   article.leadership {
-    padding: 1em 0;
+    padding: 2em 0;
 
 
     h2 {
@@ -53,6 +48,7 @@ article.leadership {
     }
 
     div {
+      line-height: 10px;
       @include grid-column(3);
     }
 

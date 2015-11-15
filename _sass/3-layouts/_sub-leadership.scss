@@ -1,5 +1,7 @@
 section.sub-leadership {
   @include grid-row;
+  background: darken($offWhite, 2%);
+  padding: 2em 0 2em .5em;
 
   ul {
     padding: 0;
@@ -45,7 +47,7 @@ section.sub-leadership {
     div {
 
       ul {
-        @include grid-column(6);
+        @include grid-column(6, $collapse: true);
       }
 
     }

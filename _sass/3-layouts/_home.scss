@@ -1,6 +1,6 @@
 article.home {
   @include grid-row;
-  background: $blue;
+  @include panel;
 
   section.welcome {
     margin-bottom: 0;

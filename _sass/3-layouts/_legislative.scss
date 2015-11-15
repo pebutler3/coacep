@@ -1,9 +1,10 @@
 article.legislative {
-    background: $dk-blue;
-    color: $white;
-    padding-bottom: 1em;
+    @include grid-row;
+    @include panel;
+    padding: 2em 0;
 
     h2 { @include grid-column(12); }
+    h3 { padding-left: 1em; }
 
     section.updates {
         @include grid-row;
@@ -23,7 +24,10 @@ article.legislative {
           @include grid-column(4);
           line-height: 5px;
 
+          h3 { padding-left: 0; }
+
           img { display: inline-block; border-radius: 2%; }
+
       }
 
     }
