@@ -40,7 +40,9 @@ article.legislative {
 
         section.updates {
 
-            div { @include grid-column(12); }
+            div {
+              @include grid-column(12);
+            }
 
         }
 
