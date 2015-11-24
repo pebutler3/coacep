@@ -14,40 +14,24 @@ section.sub-leadership {
       @include grid-row;
     }
 
-  }
-
-}
-
-@media #{$small-only} {
-
-  .board-of-directors {
-    @include grid-column(12);
-
-    ul {
-      @include grid-column(12, $collapse: true);
-    }
-
-  }
-
-  .resident-rep {
-    @include grid-column(12);
-  }
-
-  .leadership-fellow {
-    @include grid-column(12);
-  }
-
-}
-
-@media #{$medium-up} {
-
-  .board-of-directors {
-    @include grid-column(6);
-
-    div {
+    @media #{$small-only} {
+      @include grid-column(12);
 
       ul {
-        @include grid-column(6, $collapse: true);
+        @include grid-column(12, $collapse: true);
+      }
+
+    }
+
+    @media #{$medium-up} {
+      @include grid-column(6);
+
+      div {
+
+        ul {
+          @include grid-column(6, $collapse: true);
+        }
+
       }
 
     }
@@ -55,11 +39,27 @@ section.sub-leadership {
   }
 
   .resident-rep {
-    @include grid-column(3);
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+
+    @media #{$medium-up} {
+      @include grid-column(3);
+    }
+
   }
 
   .leadership-fellow {
-    @include grid-column(3);
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+
+    @media #{$medium-up} {
+      @include grid-column(3);
+    }
+
   }
 
 }
