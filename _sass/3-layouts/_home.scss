@@ -2,34 +2,30 @@ article.home {
   @include grid-row;
   @include panel;
 
+
   section.welcome {
     margin-bottom: 0;
-  }
 
-}
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
 
-// Media Queries
+    @media #{$medium-up} {
+      @include grid-column(8);
+    }
 
-@media #{$small-only} {
-
-  section.welcome {
-    @include grid-column(12);
-  }
-
-  section.dates {
-    @include grid-column(12);
-  }
-
-}
-
-@media #{$medium-up} {
-
-  section.welcome {
-    @include grid-column(8);
   }
 
   section.dates {
-    @include grid-column(4);
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+
+    @media #{$medium-up} {
+      @include grid-column(4);
+    }
+
   }
 
 }
