@@ -4,9 +4,27 @@ article.leadership {
   text-align: center;
   color: $dk-blue;
 
-  section.main-leadership {
-    padding: 2em 0;
+  @media #{$small-only} {
+
+    h2 {
+      font-size: 32px;
+    }
+
   }
+
+  @media #{$medium-up} {
+    padding: 2em 0;
+
+    h2 {
+      font-size: 42px;
+    }
+
+  }
+
+}
+
+section.main-leadership {
+  padding: 2em 0;
 
   div {
 
@@ -14,40 +32,12 @@ article.leadership {
       border-radius: 2%;
     }
 
-  }
-
-}
-
-// Media Queries
-
-@media #{$small-only} {
-
-  article.leadership {
-
-    h2 {
-      font-size: 32px;
-    }
-
-    div {
+    @media #{$small-only} {
       @include grid-column(6);
       line-height: 20px;
     }
 
-  }
-
-}
-
-@media #{$medium-up} {
-
-  article.leadership {
-    padding: 2em 0;
-
-
-    h2 {
-      font-size: 42px;
-    }
-
-    div {
+    @media #{$medium-up} {
       line-height: 10px;
       @include grid-column(3);
     }
