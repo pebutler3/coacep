@@ -1,8 +1,8 @@
 article.leadership {
   @include grid-row;
-  background: $offWhite;
   text-align: center;
   color: $dk-blue;
+  margin: 2em 0;
 
   @media #{$small-only} {
 
@@ -17,6 +17,10 @@ article.leadership {
 
     h2 {
       font-size: 42px;
+    }
+
+    h3, h4 {
+      line-height: 20px;
     }
 
   }
