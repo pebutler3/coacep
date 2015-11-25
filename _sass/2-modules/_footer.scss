@@ -2,7 +2,6 @@ footer {
   @include grid-row;
   background: $black;
   color: $white;
-  min-height: 400px;
 
   .info {
     @include grid-column(12);
