@@ -1,10 +1,11 @@
 article.home {
   @include grid-row;
   @include panel;
+  padding: 4em 0;
 
+  h2 { margin: 0; }
 
   section.welcome {
-    margin-bottom: 0;
 
     @media #{$small-only} {
       @include grid-column(12);
@@ -17,6 +18,16 @@ article.home {
   }
 
   section.dates {
+
+   ul {
+     padding: 0;
+     list-style: none;
+
+     li:before {
+       content: '- ';
+     }
+
+   }
 
     @media #{$small-only} {
       @include grid-column(12);
