@@ -1,5 +1,35 @@
 footer {
   @include grid-row;
   background: $black;
+  color: $white;
   min-height: 400px;
+
+  .info {
+    @include grid-column(12);
+    margin: 2em 0;
+    text-align: center;
+    line-height: 20px;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+
+    span { color: $blue; }
+
+  }
+
+  .attribution {
+
+    p {
+      @include grid-column(8);
+    }
+
+    .social {
+      @include grid-column(4);
+      text-align: right;
+    }
+
+  }
+
 }
