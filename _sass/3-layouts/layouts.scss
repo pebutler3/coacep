@@ -3,7 +3,3 @@
         "sub-leadership",
         "legislative",
         "contact";
-hr {
-  @include grid-column(4, $center: true);
-  @include hr(2em, 2em);
-}
