@@ -1,9 +1,9 @@
 article.legislative {
     @include grid-row;
     @include panel;
-    padding: 2em 0;
+    padding: 4em 0;
 
-    h2 { @include grid-column(12); }
+    h2 { @include grid-column(12); padding-bottom: 1em; }
     h3 { padding-left: 1em; }
 
     section.updates {

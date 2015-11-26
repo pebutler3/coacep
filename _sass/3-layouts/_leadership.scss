@@ -4,6 +4,10 @@ article.leadership {
   color: $dk-blue;
   margin: 2em 0;
 
+  h2 {
+    padding-bottom: 1em;
+  }
+
   @media #{$small-only} {
 
     h2 {
