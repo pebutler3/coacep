@@ -14,6 +14,15 @@ $gray-90         : rgba(25, 27, 29, 0.9);
 $blue         : #00bcd4;
 $dk-blue      : darken($blue, 5%);
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
 
 h2 {
   font-size: 42px;
