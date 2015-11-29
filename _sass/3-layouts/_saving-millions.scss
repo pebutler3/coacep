@@ -2,23 +2,41 @@ section.saving-millions {
   @include grid-row;
 
   div {
-    @include grid-column(6);
-    background: lighten(#006fba, .3%);
+    position: relative;
+    background: $offWhite;
     height: 315px;
+    text-align: center;
+
+    @media #{$medium-up} {
+      @include grid-column(6, $collapse: true);
+    }
 
     img {
       position: relative;
-      top: 15%;
+      margin: 4em 0 1em 0;
+    }
+
+    a {
+      display: inline-block;
+      position: absolute;
+      background: darken($blue, 10%);
+      color: $white;
       left: 0;
       right: 0;
       bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 24px;
+      text-decoration: none;
+
+      &:hover { text-decoration: underline; }
+
     }
 
-    iframe {
-      position: relative;
-      top: 5px;
-    }
+  }
 
+  div + div {
+    padding-right: 0;
   }
 
 }
