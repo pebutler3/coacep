@@ -3,7 +3,7 @@ section.saving-millions {
 
   div {
     position: relative;
-    background: $offWhite;
+    background: $black;
     height: 315px;
     text-align: center;
 
@@ -19,7 +19,7 @@ section.saving-millions {
     a {
       display: inline-block;
       position: absolute;
-      background: darken($blue, 10%);
+      background: lighten($black, 5%);
       color: $white;
       left: 0;
       right: 0;
