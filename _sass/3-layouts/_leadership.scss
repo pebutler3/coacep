@@ -1,5 +1,4 @@
 article.leadership {
-  @include grid-row;
   text-align: center;
   color: $dk-blue;
   margin: 2em 0;
@@ -32,6 +31,7 @@ article.leadership {
 }
 
 section.main-leadership {
+  @include grid-row;
   padding: 2em 0;
 
   div {

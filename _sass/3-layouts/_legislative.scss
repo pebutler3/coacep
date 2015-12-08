@@ -1,7 +1,7 @@
 article.legislative {
     @include grid-row;
     @include panel;
-    padding: 4em 0;
+    padding: 4em 5%;
 
     h2 { @include grid-column(12); padding-bottom: 1em; }
 
