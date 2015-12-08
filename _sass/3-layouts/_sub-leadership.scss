@@ -1,6 +1,7 @@
 section.sub-leadership {
   @include grid-row;
   background: darken($offWhite, 2%);
+  color: $dk-blue;
   padding: 2em 0 2em .5em;
 
   ul {
