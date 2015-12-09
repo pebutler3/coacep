@@ -1,6 +1,5 @@
 section.hero {
   @include grid-row;
-  display: table;
   background: url(../img/hero.jpg) no-repeat center center;
   background-size: cover;
   height: 400px;
@@ -20,6 +19,15 @@ section.hero {
       color: $blue;
     }
 
+  }
+
+  img {
+    display: block;
+    position: relative;
+    width: 550px;
+    height: auto;
+    top: 30%;
+    margin: 0 auto;
   }
 
 }
