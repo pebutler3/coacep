@@ -1,0 +1,36 @@
+article.connect {
+  @include grid-row;
+  color: $dk-blue;
+  margin: 2em 0;
+
+  h2 {
+    padding-bottom: 1em;
+  }
+
+  @media #{$small-only} {
+
+    h2 {
+      font-size: 32px;
+    }
+
+  }
+
+  @media #{$medium-up} {
+    padding: 2em 0;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3, h4 {
+      line-height: 20px;
+    }
+
+  }
+
+  section {
+    @include grid-column(3);
+    padding: 4em 5%;
+  }
+
+}
