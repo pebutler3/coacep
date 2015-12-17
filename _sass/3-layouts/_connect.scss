@@ -3,14 +3,33 @@ article.connect {
   color: $dk-blue;
   margin: 2em 0;
 
-  h2 {
-    padding-bottom: 1em;
+  ul {
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+  }
+
+  li {
+    margin: 0 0 .5em 0;
+    width: 100%;
+
+    a {
+      background: $blue;
+      color: $white;
+      text-decoration: none;
+      padding: .5em .5em;
+    }
+
   }
 
   @media #{$small-only} {
 
     h2 {
       font-size: 32px;
+    }
+
+    section {
+      @include grid-column(12);
     }
 
   }
@@ -26,11 +45,11 @@ article.connect {
       line-height: 20px;
     }
 
-  }
+    section {
+      @include grid-column(12);
+      padding: 0 5%;
+    }
 
-  section {
-    @include grid-column(3);
-    padding: 4em 5%;
   }
 
 }
