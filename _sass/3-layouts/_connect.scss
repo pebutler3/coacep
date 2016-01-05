@@ -63,7 +63,7 @@ article.connect {
   @include grid-row(100);
 
   .button {
-   @include grid-column(6);
+   @include grid-column(4);
    margin-bottom: 0;
 
    &[data-social="facebook"] {
@@ -79,6 +79,11 @@ article.connect {
    &[data-social="google"] {
      background: $google;
      &:hover { background: darken($google, 5%);}
+   }
+
+   &[data-social="tumblr"] {
+     background: $tumblr;
+     &:hover { background: darken($tumblr, 5%);}
    }
 
   }
