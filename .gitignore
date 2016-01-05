@@ -4,3 +4,4 @@ node_modules/
 .sass-cache
 .gitignore
 .jekyll-metadata
+.DS_Store
