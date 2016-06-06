@@ -63,7 +63,7 @@ article.connect {
   @include grid-row(100);
 
   .button {
-   @include grid-column(4);
+   @include grid-column(6);
    margin-bottom: 0;
 
    &[data-social="facebook"] {
