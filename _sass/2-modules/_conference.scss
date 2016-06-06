@@ -1,11 +1,39 @@
 section.conference-signup {
   @include grid-row;
-  line-height: 50px;
+  line-height: 25px;
 
-  h2 {
+  img {
+    @include grid-column(2);
+    position: relative;
+    max-width: 150px;
+    top: 25px;
+  }
+
+  .signup-copy {
     @include grid-column(10);
-    margin: 0;
-    font-size: 24px;
+
+    h2 {
+      position: relative;
+      margin: 0;
+      font-size: 20px;
+      top: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      font-style: italic;
+      line-height: 2px;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    strong {
+      text-transform: uppercase;
+    }
+
   }
 
   .button {
