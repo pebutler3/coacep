@@ -2,6 +2,10 @@ section.conference-signup {
   @include grid-row;
   line-height: 25px;
 
+  @media #{$medium-up} {
+    margin: 25px;
+  }
+
   img.art-hotel-logo {
     @include grid-column(3);
     position: relative;
