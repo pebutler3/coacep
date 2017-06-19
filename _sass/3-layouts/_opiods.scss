@@ -1,0 +1,16 @@
+.opiods {
+  @include grid-row;
+  background-color: $offWhite;
+  color: $dk-blue;
+  padding: 1em 5%;
+
+  section {
+    @include grid-column(8);
+  }
+
+  img {
+    @include grid-column(4);
+    max-width: 300px;
+  }
+
+}
