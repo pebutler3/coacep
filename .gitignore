@@ -5,3 +5,4 @@ node_modules/
 .gitignore
 .jekyll-metadata
 .DS_Store
+package-lock.json
