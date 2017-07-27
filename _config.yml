@@ -10,4 +10,4 @@ description: > # this means to ignore newlines until "baseurl:"
 # Build settings
 markdown: kramdown
 
-gems: [jekyll-admin]
+plugins: [jekyll-admin]
