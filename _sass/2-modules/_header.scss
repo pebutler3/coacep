@@ -1,6 +1,6 @@
 header {
   @include grid-row;
   .top-bar-section {
-    ul.left > li > a.active { background: $blue; }
+    ul.left > li > a.active { background: $gradient-dkBlue; }
   }
 }

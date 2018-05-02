@@ -1,9 +1,14 @@
 article.home {
   @include grid-row;
-  @include panel;
+  @include panel-blue;
   padding: 4em 5%;
 
-  h2 { margin: 0; }
+  h2 {
+    background-color: $colorado-blue;
+    display: inline-block;
+    margin: 0;
+    padding: 0 2rem;
+  }
 
   section.welcome {
 
@@ -22,15 +27,17 @@ article.home {
   }
 
   section.dates {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    box-shadow: 5px 5px 0 0 $gradient-ltBlue;
 
-   ul {
-     padding: 0;
-     list-style: none;
+    ul {
+      padding: 0;
+      list-style: none;
 
-     li:before {
-       content: '- ';
-     }
-
+      li:before {
+        content: '- ';
+      }
    }
 
     @media #{$small-only} {

@@ -1,6 +1,6 @@
 article.connect {
   @include grid-row;
-  color: $dk-blue;
+  color: $colorado-blue;
   margin: 2em 0;
 
   ul {
@@ -14,13 +14,13 @@ article.connect {
     width: 100%;
 
     a {
-      background: $blue;
+      background: $colorado-blue;
       color: $white;
       text-decoration: none;
       padding: .5em .5em;
 
       &:hover {
-        background: $dk-blue;
+        background: darken($colorado-blue, 10%);
       }
 
     }

@@ -2,3 +2,9 @@
   background: $bg;
   color: $white;
 }
+
+@mixin panel-blue($bg: $gradient-bgColor, $bg-image: $gradient-bgImage) {
+  background-color: $bg;
+  background-image: $bg-image;
+  color: $white;
+}

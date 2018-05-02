@@ -1,10 +1,23 @@
 article.leadership {
   text-align: center;
-  color: $dk-blue;
+  color: $colorado-blue;
   margin: 2em 0;
 
   h2 {
     padding-bottom: 1em;
+  }
+
+  h3 {
+    background-color: $colorado-blue;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 0;
+    padding: 1rem 2rem;
+  }
+
+  h4 {
+    font-size: 14px;
   }
 
   @media #{$small-only} {
@@ -23,7 +36,7 @@ article.leadership {
     }
 
     h3, h4 {
-      line-height: 20px;
+      line-height: 10px;
     }
 
   }
@@ -37,7 +50,7 @@ section.main-leadership {
   div {
 
     img {
-      border-radius: 2%;
+      border-radius: 50%;
     }
 
     @media #{$small-only} {

@@ -1,20 +1,11 @@
 article.legislative {
     @include grid-row;
-    @include panel;
+    @include panel-blue;
     padding: 4em 5%;
 
     h2 { @include grid-column(12); padding-bottom: 1em; }
 
     h3 { padding-left: 1em; }
-
-    .button {
-      background: darken($blue, 10%);
-
-      &:hover {
-        background: darken($blue, 15%);
-      }
-
-    }
 
     section.updates {
         @include grid-row;

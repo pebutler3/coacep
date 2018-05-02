@@ -2,7 +2,8 @@ section.contact {
   @include grid-row;
 
   h2 {
-    text-align: center; 
+    color: $colorado-blue;
+    text-align: center;
   }
 
   form {

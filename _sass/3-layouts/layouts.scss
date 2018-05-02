@@ -7,3 +7,11 @@
         "connect",
         "saving-millions",
         "contact";
+
+.button {
+  background-color: $colorado-blue;
+
+  &:hover {
+    background-color: darken($colorado-blue, 10%);
+  }
+}

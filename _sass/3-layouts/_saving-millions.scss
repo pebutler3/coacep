@@ -2,9 +2,9 @@ section.saving-millions {
   @include grid-row;
 
   div {
-    position: relative;
-    background: $black;
+    @include panel-blue;
     height: 315px;
+    position: relative;
     text-align: center;
 
     @media #{$medium-up} {
@@ -17,9 +17,9 @@ section.saving-millions {
     }
 
     a {
+      background-color: $colorado-blue;
       display: inline-block;
       position: absolute;
-      background: lighten($black, 5%);
       color: $white;
       left: 0;
       right: 0;

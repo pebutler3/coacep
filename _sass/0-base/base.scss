@@ -1,25 +1,34 @@
-$row-width       : 100%;
+$row-width              : 100%;
 
 // Generic Colors
-$black           : #333333;
-$black-87        : rgba(26, 26, 26, 0.87);
+$black                  : #333333;
+$black-87               : rgba(26, 26, 26, 0.87);
 
-$white           : #ffffff;
-$offWhite        : darken($white, 3%);
+$white                  : #ffffff;
+$offWhite               : darken($white, 3%);
 
 // Brand Colors
-$gray            : rgba(158, 158, 158, 0.43);
-$gray-90         : rgba(25, 27, 29, 0.9);
+$gray                   : rgba(158, 158, 158, 0.43);
+$gray-90                : rgba(25, 27, 29, 0.9);
 
-$blue         : #00bcd4;
-$dk-blue      : darken($blue, 5%);
-$colo-blue    : #213983;
+$blue                   : #00bcd4;
+$dk-blue                : darken($blue, 5%);
+$colo-blue              : #213983;
+
+// New Styles
+$colorado-blue          : #0f2778;
+$gradient-ltBlue        : #09c6fa;
+$gradient-dkBlue        : #1263E6;
+$gradient-bgColor       : #045de9;
+$gradient-dkBlue-2      : #0e5eda;
+// background-image
+$gradient-bgImage       : linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 
 // Social Colors
-$facebook: #4562a0;
-$twitter: #50abf1;
-$google: #dd4330;
-$tumblr: #36465D;
+$facebook               : #4562a0;
+$twitter                : #50abf1;
+$google                 : #dd4330;
+$tumblr                 : #36465D;
 
 h1,
 h2,
@@ -53,4 +62,3 @@ article > h2 {
   }
 
 }
-
