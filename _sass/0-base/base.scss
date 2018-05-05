@@ -54,3 +54,18 @@ article > h2 {
 
 }
 
+.icon-email {
+  color: $blue;
+  text-decoration: none;
+
+  &::before {
+    content: '';
+    background: url(/img/email.svg) no-repeat;
+    display: inline-block;
+    height: 20px;
+    margin-right: 10px;
+    width: 33px;
+    vertical-align: middle;
+  }
+}
+
