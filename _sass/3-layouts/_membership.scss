@@ -1,0 +1,21 @@
+.membership {
+  @include grid-row;
+  color: $dk-blue;
+  margin: 2em 0;
+
+  &__description {
+    @include grid-column(7);
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+  }
+
+  &__benefits {
+    @include grid-column(5);
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+  }
+}
