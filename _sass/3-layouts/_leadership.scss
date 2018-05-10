@@ -34,15 +34,22 @@ section.main-leadership {
   @include grid-row;
   padding: 2em 0;
 
+  @media #{$small-only} {
+    line-height: 10px;
+  }
+
   div {
+
+    @media #{$small-only} {
+      margin-bottom: 2em;
+    }
 
     img {
       border-radius: 2%;
     }
 
-    @media #{$small-only} {
-      @include grid-column(6);
-      line-height: 20px;
+    @media #{$small} {
+      @include grid-column(12);
     }
 
     @media #{$medium-up} {

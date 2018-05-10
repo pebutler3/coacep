@@ -1,0 +1,40 @@
+.upcoming-events {
+  @include grid-row;
+  padding: 15px 0 10px;
+
+  h2 {
+    @include grid-column(12);
+    font-size: 1.5rem;
+  }
+
+  .calendar {
+    @include grid-column(2);
+    height: 100px;
+
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+
+  ul {
+    @include grid-column(10);
+    list-style: none;
+    margin-top: 0;
+
+    @media #{$small-only} {
+      @include grid-column(12);
+    }
+
+    li {
+      font-size: 1.25rem;
+
+      @media #{$small-only} {
+        font-size: 1rem;
+      }
+
+      &::before {
+        content: "- ";
+      }
+    }
+  }
+}

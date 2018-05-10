@@ -7,7 +7,9 @@ conference: false
 
 {% include hero.html %}
 
-<!-- {% include conference.html %} -->
+<!-- include conference -->
+
+{% include upcoming-events.html %}
 
 <article class="home">
   <section class="welcome">
@@ -31,15 +33,7 @@ conference: false
   </section>
 </article>
 
-<article class="opiods">
-  <section>
-  <h3>colorado acep 2017 opioid prescribing & treatment guidelines</h3>
-  <h4>Confronting the Opioid Epidemic in Colorado’s Emergency Departments</h4>
-  <p>Emergency providers across Colorado and our nation are facing one of the greatest public health crises of our generation. Opioids, both prescription and illicit, have become the leading cause of accidental death in the United States.</p>
-  <a class="button" href="/docs/COACEP_Opioid_Guidelines-Final.pdf">Learn More</a>
-  </section>
-  <img src="../img/pill_bottles.png" alt="pill bottles">
-</article>
+{% include opioids.html %}
 
 {% include saving-millions.html %}
 
@@ -49,35 +43,7 @@ conference: false
 
 {% include membership.html %}
 
-<article class="legislative" data-scroll-index="3">
-    <h2>Legislative</h2>
-    <section class="updates">
-        <h3>Updates</h3>
-        <div>
-            <p>Are you concerned about where emergency medicine is going and who is working for your personal concerns? Emergency physicians face a wide variety of challenges in an era of rapid change. We must be united to protect our specialty and to protect our patients.  The Colorado Chapter of Emergency Physicians is your voice for those concerns!</p>
-        </div>
-        <ul>
-            <li><a class="button" href="/docs/reports/2018/march.pdf">Legislative Report 03/27/18</a></li>
-        </ul>
-    </section>
-    <section class="advocacy">
-        <h3>Advocacy</h3>
-        <div>
-            <p>One of the most important values of Colorado ACEP membership is having your rights and interests represented at the state capitol. As a strong, unified professional organization we have taken many steps to empower physicians and to protect our patients. We have enjoyed several important successes as a result, including but not limited to:</p>
-            <ul>
-                <li>Medicaid Reimbursement</li>
-                <li>Medical Liability Reform</li>
-                <li>Emergency Medical and Prehospital Services</li>
-                <li>Statewide Trauma System</li>
-            </ul>
-        </div>
-        <div class="lobbyist">
-            <h3>Colorado ACEP Lobbyist</h3>
-            <h4>Suzanne Hamilton</h4>
-            <img src="../img/suzanne.jpg" alt="">
-        </div>
-    </section>
-</article>
+{% include legislative.html %}
 
 {% include resources.html %}
 
