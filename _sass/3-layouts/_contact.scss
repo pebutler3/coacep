@@ -1,5 +1,6 @@
 section.contact {
   @include grid-row;
+  @include panel;
 
   h2 {
     color: $colorado-blue;
