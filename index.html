@@ -7,7 +7,9 @@ conference: false
 
 {% include hero.html %}
 
-<!-- {% include conference.html %} -->
+<!-- include conference -->
+
+{% include upcoming-events.html %}
 
 <article class="home">
   <section class="welcome">
@@ -31,15 +33,7 @@ conference: false
   </section>
 </article>
 
-<article class="opiods">
-  <section>
-  <h3>colorado acep 2017 opioid prescribing & treatment guidelines</h3>
-  <h4>Confronting the Opioid Epidemic in Colorado’s Emergency Departments</h4>
-  <p>Emergency providers across Colorado and our nation are facing one of the greatest public health crises of our generation. Opioids, both prescription and illicit, have become the leading cause of accidental death in the United States.</p>
-  <a class="button" href="/docs/COACEP_Opioid_Guidelines-Final.pdf">Learn More</a>
-  </section>
-  <img src="../img/pill_bottles.png" alt="pill bottles">
-</article>
+{% include opioids.html %}
 
 {% include saving-millions.html %}
 

@@ -18,4 +18,12 @@
       @include grid-column(12);
     }
   }
+
+  ul {
+    padding: 0 15px;
+
+    li {
+      padding-bottom: 10px;
+    }
+  }
 }
