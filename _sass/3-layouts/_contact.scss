@@ -1,9 +1,10 @@
 section.contact {
   @include grid-row;
-  @include panel;
+  @include panel-blue-green;
+  @include top-bottom-border(2px, solid, $colorado-blue);
 
   h2 {
-    color: $colorado-blue;
+    color: $white;
     text-align: center;
   }
 

@@ -1,8 +1,9 @@
 section.saving-millions {
   @include grid-row;
+  @include top-bottom-border(2px, solid, $colorado-blue);
 
   div {
-    @include panel-blue;
+    @include panel-blue-green;
     height: 315px;
     position: relative;
     text-align: center;

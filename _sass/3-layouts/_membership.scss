@@ -1,10 +1,11 @@
 .membership {
   @include grid-row;
-  color: $dk-blue;
+  color: $colorado-blue;
   margin: 2em 0;
 
   &__description {
     @include grid-column(7);
+    padding: 0 80px;
 
     @media #{$small-only} {
       @include grid-column(12);
@@ -13,6 +14,8 @@
 
   &__benefits {
     @include grid-column(5);
+    @include panel-blue-green;
+    @include full-border(2px, solid, $colorado-blue);
 
     @media #{$small-only} {
       @include grid-column(12);

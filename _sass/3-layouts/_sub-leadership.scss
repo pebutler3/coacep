@@ -1,7 +1,9 @@
 section.sub-leadership {
   @include grid-row;
-  background: darken($offWhite, 2%);
-  color: $colorado-blue;
+  @include panel-blue-green;
+  @include top-bottom-border(2px, solid, $colorado-blue);
+  // background: darken($offWhite, 2%);
+  color: $white;
   padding: 2em 5%;
 
   ul {

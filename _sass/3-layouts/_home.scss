@@ -1,7 +1,9 @@
 article.home {
   @include grid-row;
-  @include panel-blue;
+  @include panel-blue-green;
+  @include top-bottom-border(2px, solid, $colorado-blue);
   padding: 4em 5%;
+  position: relative;
 
   h2 {
     background-color: $colorado-blue;
@@ -27,9 +29,13 @@ article.home {
   }
 
   section.dates {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: $white;
+    bottom: 0;
+    color: $colorado-blue;
     padding: 20px 0;
-    box-shadow: 5px 5px 0 0 $gradient-ltBlue;
+    position: absolute;
+    right: 0;
+    top: 0;
 
     ul {
       padding: 0;
@@ -46,6 +52,7 @@ article.home {
 
     @media #{$medium-up} {
       @include grid-column(3);
+      border-left: 2px solid $colorado-blue;
     }
 
   }

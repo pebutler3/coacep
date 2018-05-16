@@ -30,6 +30,16 @@ $twitter                : #50abf1;
 $google                 : #dd4330;
 $tumblr                 : #36465D;
 
+// @General Mixins
+@mixin full-border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin top-bottom-border($width, $style, $color) {
+  border-bottom: $width $style $color;
+  border-top: $width $style $color;
+}
+
 h1,
 h2,
 h3,
@@ -75,5 +85,15 @@ article > h2 {
     margin-right: 10px;
     width: 33px;
     vertical-align: middle;
+  }
+}
+
+.jotform-form {
+
+  .form-all {
+
+    input, textarea {
+      @include full-border(2px, solid, $colorado-blue);
+    }
   }
 }

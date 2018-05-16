@@ -1,6 +1,7 @@
 article.legislative {
     @include grid-row;
-    @include panel-blue;
+    @include panel-blue-green;
+    @include top-bottom-border(2px, solid, $colorado-blue);
     padding: 4em 5%;
 
     h2 { @include grid-column(12); padding-bottom: 1em; }
