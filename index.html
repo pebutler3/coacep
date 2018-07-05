@@ -1,15 +1,15 @@
 ---
 layout: default
-conference: false
+conference: true
 ---
 
 {% include header.html %}
 
 {% include hero.html %}
 
-<!-- include conference -->
-
-{% include upcoming-events.html %}
+{% if page.conference %}
+  {% include conference.html %}
+{% endif %}
 
 <article class="home">
   <section class="welcome">

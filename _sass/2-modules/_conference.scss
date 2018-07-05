@@ -1,15 +1,27 @@
 section.conference-signup {
   @include grid-row;
   background: $offWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: 25px;
 
+  @media #{$medium} {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .symposium-image {
+    height: 100%;
+  }
+
   .info-wrapper {
-    @include grid-column(6);
+    @include grid-column(4);
     padding: 0 1em 1em 1em;
 
     .save-the-date {
       position: relative;
-      background-color: $colo-blue;
+      background-color: $colorado-blue;
       color: $white;
       width: 200px;
       padding: .5em 1.5em .5em 1em;
@@ -32,7 +44,7 @@ section.conference-signup {
     }
 
     .info-list {
-      color: $dk-blue;
+      color: $colorado-blue;
       list-style: none;
       padding: 0;
       text-transform: uppercase;
