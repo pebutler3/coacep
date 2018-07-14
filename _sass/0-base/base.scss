@@ -97,3 +97,11 @@ article > h2 {
     }
   }
 }
+
+// utilities
+.text-align {
+
+  &--center {
+    text-align: center;
+  }
+}
