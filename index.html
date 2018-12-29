@@ -1,6 +1,7 @@
 ---
 layout: default
 conference: false
+beforeAnnualMeeting: true
 ---
 
 {% include header.html %}
@@ -23,13 +24,18 @@ conference: false
     <p><strong>The Colorado Chapter of Emergency Physicians is your voice for those concerns!</strong></p>
   </section>
   <section class="dates">
-    <h3>CO ACEP Meetings</h3>
-    <ul>
-     <li>Nov. 7</li>
-    </ul>
-    <p>All meetings will be held at CMS/COPIC offices located at 7351 E. Lowry Blvd.
-  Meetings begin at 12:00pm.</p>
-  <!--/* <img src="/img/denverchophouse.jpg" alt=""> */-->
+    <h3>CO ACEP Meetings 2019</h3>
+
+    {% if page.beforeAnnualMeeting %}
+      <p>
+        <strong>Annual Meeting:</strong>
+        January 23, 2019 at the Denver Chophouse.
+      </p>
+      <img src="/img/denverchophouse.jpg" alt="Denver Chop House">
+    {% endif %}
+
+    {% include meetings-list.html %}
+
   </section>
 </article>
 
