@@ -1,27 +1,23 @@
 <header>
-<div>
-
-  <nav class="top-bar" data-topbar role="navigation">
-
-    <ul class="title-area">
-      <li class="name">
-        {% if page.thankyou %}
-            <h1><a href="/">{{ site.title }}</a></h1>
-          {% else %}
-            <h1><a href="#">{{ site.title }}</a></h1>
-        {% endif %}
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-
-    <section class="top-bar-section" id="menu">
-      <ul class="left">
-        {% include menu.html %}
+  <div>
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          {% if page.thankyou %}
+              <h1><a href="/">{{ site.title }}</a></h1>
+            {% else %}
+              <h1><a href="#">{{ site.title }}</a></h1>
+          {% endif %}
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
-    </section>
 
-  </nav>
-</div>
-
+      <section class="top-bar-section" id="menu">
+        <ul class="left">
+          {% include menu.html %}
+        </ul>
+      </section>
+    </nav>
+  </div>
 </header>
 
