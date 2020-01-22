@@ -1,6 +1,15 @@
-article.meetings {
+article.events {
   @include grid-row;
   @include panel-blue-green;
   @include top-bottom-border(2px, solid, $colorado-blue);
   padding: 4em 5%;
+
+  figure {
+    max-width: 350px;
+    text-align: center;
+
+    figcaption {
+      font-weight: bold;
+    }
+  }
 }
