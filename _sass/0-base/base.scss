@@ -17,10 +17,12 @@ $colo-blue              : #213983;
 
 // New Styles
 $colorado-blue          : #0f2778;
+$colorado-blue-dark     : darken($colorado-blue, 10%);
 $gradient-ltBlue        : #09c6fa;
 $gradient-dkBlue        : #1263E6;
 $gradient-bgColor       : #045de9;
 $gradient-dkBlue-2      : #0e5eda;
+
 // background-image
 $gradient-bgImage       : linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 

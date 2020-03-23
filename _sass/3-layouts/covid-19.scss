@@ -1,0 +1,30 @@
+.covid-19 {
+  display: flex;
+  @include top-bottom-border(2px, solid, $colorado-blue);
+
+  img {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    background: $colorado-blue-dark;
+    color: $white;
+    padding: 1.5rem;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__quick-links {
+    display: flex;
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
