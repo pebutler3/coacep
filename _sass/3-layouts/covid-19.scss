@@ -1,19 +1,38 @@
 .covid-19 {
   display: flex;
+  flex-direction: column;
   @include top-bottom-border(2px, solid, $colorado-blue);
 
+  @media #{$large-up} {
+    flex-direction: row;
+  }
+
   img {
-    max-width: 50%;
+    height: 100%;
     width: 100%;
+  }
+
+  &__image-link {
+    display: block;
+    width: 100%;
+
+    @media #{$large-up} {
+      width: 50%;
+    }
   }
 
   &__content-wrapper {
     background: $colorado-blue-dark;
     color: $white;
     padding: 1.5rem;
+    width: 100%;
 
     a {
       color: $white;
+    }
+
+    @media #{$large-up} {
+      width: 50%;
     }
   }
 

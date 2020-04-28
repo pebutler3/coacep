@@ -33,6 +33,7 @@ section.sub-leadership {
 
         ul {
           @include grid-column(6, $collapse: true);
+          margin: 0;
         }
 
       }
