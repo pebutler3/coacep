@@ -3,4 +3,5 @@
 ## Now building with Jekyll Serve
 
 ## Todo
-[ ] Remove Gulp
+[x] Remove Gulp
+
