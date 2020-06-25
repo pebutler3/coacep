@@ -2,6 +2,3 @@
 
 ## Now building with Jekyll Serve
 
-## Todo
-[x] Remove Gulp
-
