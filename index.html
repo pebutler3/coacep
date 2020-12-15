@@ -1,7 +1,7 @@
 ---
 layout: default
 conference: false
-beforeAnnualMeeting: false
+beforeAnnualMeeting: true
 ---
 
 {% include header.html %}
@@ -24,18 +24,13 @@ beforeAnnualMeeting: false
     <p><strong>The Colorado Chapter of Emergency Physicians is your voice for those concerns!</strong></p>
   </section>
   <section class="dates">
-    <h3>CO ACEP Meetings 2020</h3>
+    <h3>CO ACEP Meetings 2021</h3>
 
     {% if page.beforeAnnualMeeting %}
-      <p>
-        <strong>Annual Meeting:</strong>
-        January 22, 2020 at the Denver Chophouse.
-      </p>
-      <p><strong>Guest Speaker:</strong>  Dr. Vidor Friedman, ACEP Past President.</p>
-      <img src="/img/denverchophouse.jpg" alt="Denver Chop House">
+      {% include annual-meeting.html %}
     {% endif %}
 
-    {% include meetings-list.html %}
+    <!-- {% include meetings-list.html %} -->
 
   </section>
 </article>

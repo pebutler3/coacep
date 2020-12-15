@@ -28,7 +28,11 @@ article.legislative {
 
           h3 { padding-left: 0; }
 
-          img { display: inline-block; border-radius: 2%; }
+          img { 
+            display: inline-block;
+            border-radius: 2%; 
+            max-height: 350px;
+          }
 
       }
 
@@ -49,14 +53,17 @@ article.legislative {
         }
 
        section.advocacy {
+          div {
+            @include grid-column(12);
+          }
 
-         .lobbyist {
+         div.lobbyist {
+            @include grid-column(12);
 
-           h3,
-           h4 {
-             line-height: 15px;
-           }
-
+            h3,
+            h4 {
+              line-height: 15px;
+            }
          }
 
        }
