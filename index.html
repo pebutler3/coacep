@@ -12,6 +12,10 @@ beforeAnnualMeeting: true
   {% include conference.html %}
 {% endif %}
 
+{% if page.beforeAnnualMeeting %}
+  {% include annual-meeting-sidebar.html %}
+{% endif %}
+
 <article class="home">
   <section class="welcome">
     <h2>Welcome!</h2>
@@ -24,14 +28,16 @@ beforeAnnualMeeting: true
     <p><strong>The Colorado Chapter of Emergency Physicians is your voice for those concerns!</strong></p>
   </section>
   <section class="dates">
-    <h3>CO ACEP Meetings 2021</h3>
+
+    {% if page.beforeAnnualMeeting == false %}
+      <h3>CO ACEP Meetings 2021</h3>
+    {% endif %}
 
     {% if page.beforeAnnualMeeting %}
       {% include annual-meeting.html %}
     {% endif %}
 
     <!-- {% include meetings-list.html %} -->
-
   </section>
 </article>
 

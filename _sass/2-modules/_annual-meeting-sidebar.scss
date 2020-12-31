@@ -1,0 +1,49 @@
+.annual-meeting-sidebar {
+    background-color: darken($colorado-blue, 5%);
+    color: $white;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    // opacity: 0;
+    transition: opacity 250ms linear;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    a {
+        color: $blue;
+    }
+
+    button {
+        font-size: 2rem;
+        position: absolute;
+        right: 0;
+    }
+
+    &--open {
+        display: block;
+        height: 100vh;
+        opacity: 1;
+        z-index: 999;
+
+        @media #{$medium-up} {
+            @include grid-column(4);
+        }
+    }
+}
+
+.annual-meeting-sidebar__overlay {
+    background-color: $colorado-blue;
+    bottom: 0;
+    opacity: 0;
+    top: 0;
+    z-index: 1;
+
+    &--open {
+        opacity: 0.5;
+        position: fixed;
+        width: 100%;
+    }
+}
