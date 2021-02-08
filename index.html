@@ -1,7 +1,7 @@
 ---
 layout: default
 conference: false
-beforeAnnualMeeting: true
+beforeAnnualMeeting: false
 ---
 
 {% include header.html %}
@@ -31,13 +31,13 @@ beforeAnnualMeeting: true
 
     {% if page.beforeAnnualMeeting == false %}
       <h3>CO ACEP Meetings 2021</h3>
+      {% include meetings-list.html %}
     {% endif %}
 
     {% if page.beforeAnnualMeeting %}
       {% include annual-meeting.html %}
     {% endif %}
 
-    <!-- {% include meetings-list.html %} -->
   </section>
 </article>
 
