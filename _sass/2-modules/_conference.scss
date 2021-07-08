@@ -1,46 +1,54 @@
 section.conference-signup {
-  @include grid-row;
-  background: $offWhite;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   line-height: 25px;
-
-  @media #{$medium} {
-    align-items: center;
-    flex-direction: row;
-  }
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 1rem 0;
 
   .symposium-image {
     height: 100%;
   }
 
   .info-wrapper {
-    @include grid-column(4);
+    display: flex;
+    flex-direction: column;
     padding: 0 1rem;
+    width: 100%;
+
+    @media #{$medium} {
+      // justify-content: center;
+      flex-direction: row;
+    }
+
+    .info-inner {
+      padding: 2rem;
+    }
 
     .save-the-date {
       position: relative;
       background-color: $colorado-blue;
       color: $white;
-      width: 200px;
-      padding: .5em 1.5em .5em 1em;
+      width: 25%;
+      padding: 2rem 1rem 1rem;
       font-size: 1.25rem;
       font-weight: normal;
       text-transform: uppercase;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-      &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 0;
-        border-top: 25px solid $offWhite;
-        border-bottom: 25px solid $offWhite;
-        border-left: 25px solid transparent;
+      @media #{$medium} {
+        width: 25%;
       }
 
+      h2 {
+        letter-spacing: 2;
+        margin: 0;
+      }
     }
 
     .info-list {
@@ -119,5 +127,4 @@ section.conference-signup {
     background-color: $colo-blue;
     margin-bottom: 0;
   }
-
 }
