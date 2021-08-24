@@ -1,6 +1,8 @@
 $(document).foundation();
-$(function(){
+
+$(function() {
   var header = $("header > div");
+
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
 
@@ -44,4 +46,5 @@ var toggleAnnualMeetingSidebar = function() {
   closeAnnualMeetingSidebarButton.addEventListener('click', closeAnnualMeetingSidebar);
 };
 
-moreInfoButton.addEventListener('click', toggleAnnualMeetingSidebar);
+moreInfoButton && moreInfoButton.addEventListener('click', toggleAnnualMeetingSidebar);
+
